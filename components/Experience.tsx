@@ -4,11 +4,8 @@ export default function Experience() {
   return (
     <div id="experience" className="border-t border-line-soft">
       <div className="mx-auto max-w-5xl px-8 py-20">
-        <div className="mb-12 flex flex-wrap items-baseline justify-between gap-4">
+        <div className="mb-12">
           <h2 className="font-serif text-3xl font-medium text-ink sm:text-4xl">Experience</h2>
-          <p className="max-w-[34ch] text-sm text-faint">
-            Two roles, a training program, and a running list of freelance work.
-          </p>
         </div>
 
         <div className="relative pl-8">

@@ -65,7 +65,7 @@ export default function Hero() {
           />
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-void/0 from-45% to-void/55" />
           <div className="absolute bottom-3.5 left-3.5 rounded border border-ink/15 bg-void/60 px-2.5 py-1 font-mono text-xs text-body">
-            {site.location}
+            {site?.location}
           </div>
         </div>
       </div>

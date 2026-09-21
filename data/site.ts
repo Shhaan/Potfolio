@@ -4,22 +4,21 @@
 export const site = {
   name: "Mohammed Shan",
   role: "Full-stack Developer",
-  location: "Bengaluru, IN",
+  location: "",
   tagline:
     "Full-stack developer who leans backend. I build Django and React systems that hold up in production.",
   availability: "Available for full-stack & backend work",
-  profileImage: "/profile.jpg",
+  profileImage: "/me.jpeg",
 
   heroStats: [
     { value: "2 yrs", label: "Shipping production software" },
-    { value: "10+", label: "Platforms shipped, ERPs to streaming infra" },
     { value: "AWS", label: "EC2 · S3 · Aurora · Amplify", mono: true }
   ],
 
   about: [
-    "I'm self-taught — I learned Django and React by building things that had to actually work, not just tutorials. That habit stuck: I still learn best by shipping something real and fixing what breaks.",
-    "Professionally, I've spent the last two years moving between backend-heavy platforms — a multi-role e-commerce system, an enterprise information management suite with over a hundred permission rules, a rental management platform — and the AWS infrastructure that keeps them running.",
-    "Outside of client work, I build things for myself: a small algorithmic trading platform, an HLS video streaming service, a fine-tuned speech recognition model. Lately I've been deep in agentic AI and vibe-coding workflows — using AI tools as a genuine part of how I design and build software."
+    "I'm a full-stack developer with two years of experience building backend-heavy web platforms with Django and React. I care about systems that stay reliable after launch: clean APIs, sensible data models, background jobs that don't fall over, and deployments that are easy to reason about.",
+    "At Hoztox Technology I work on XIMS, an enterprise information management suite with role-based access control across 100+ permissions, and RentBiz, a property rental platform. Before that, at Kiraj Agromart, I built a multi-role e-commerce backend with Celery, Django Channels and a Pytest suite. I also own production deployments on AWS: EC2, S3, Aurora and Amplify.",
+    "Outside of client work, I build things for myself: FarmAid, a three-role marketplace for selling farm produce directly, an algorithmic trading platform, an HLS video streaming service and a fine-tuned speech recognition model. Lately I've been working with agentic AI and AI-assisted development, using these tools as a real part of how I design and ship software."
   ],
 
   workingWith: [
@@ -52,26 +51,8 @@ export const site = {
       ],
       stack: ["Django", "Celery", "Channels", "Docker", "Pytest"]
     },
-    {
-      date: "Ongoing",
-      role: "Freelance",
-      org: "Various clients",
-      points: [
-        "SSSmartOnline — e-commerce and admin ERP with WhatsApp order flow, invoicing and sales reports.",
-        "DoctorUngcle — frontend integration and Supabase-backed patient data access.",
-        "FSystems — Django deployment support and an AI-based glass recommendation feature using face-shape analysis."
-      ],
-      stack: ["Django", "React", "Supabase", "PythonAnywhere"]
-    },
-    {
-      date: "Aug 2023 — Jun 2024",
-      role: "Software Development Training",
-      org: "Brototype",
-      points: [
-        "An intensive, self-led program building real projects with Python, JavaScript, React, Django, AWS EC2 and Firebase — where most of the fundamentals actually stuck."
-      ],
-      stack: []
-    }
+  
+     
   ],
 
   skills: [

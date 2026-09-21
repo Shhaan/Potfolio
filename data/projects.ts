@@ -26,9 +26,9 @@ export const projects: Project[] = [
     tag: "Hoztox",
     addressBar: "xims.internal/dashboard",
     description:
-      "A large-scale IMS covering QMS, EMS, OHS and ENMS modules for enterprise clients, with role-based access control spanning over 100 distinct permissions. My work sat mostly in the backend — modeling the permission structure and the workflows built on top of it.",
+      "A large-scale IMS with QMS, EMS, OHS and EnMS modules for enterprise clients: documentation control, training, audits and inspections, risk and opportunity tracking, supplier management and corrective actions, with role-based access across 100+ permissions. My work sat mostly in the backend, modeling the permission structure and the workflows built on top of it.",
     stack: ["Django", "React", "Celery", "EC2", "Railway"],
-    images: ["/projects/xims/1.jpg", "/projects/xims/2.jpg", "/projects/xims/3.jpg"],
+    images: ["/projects/xims/1.png", "/projects/xims/2.png"],
     featured: true
   },
   {
@@ -37,9 +37,20 @@ export const projects: Project[] = [
     tag: "Hoztox",
     addressBar: "rentbiz.app",
     description:
-      "A property rental management platform — listings, tenancy workflows and background jobs, deployed and backed up on AWS EC2 and S3.",
+      "A property rental management platform covering buildings, units, tenants and the full tenancy cycle (create, confirm, renew, terminate), with rent collection, invoicing and revenue reports. Background jobs run on Celery, and it is deployed and backed up on AWS EC2 and S3.",
     stack: ["Django", "React", "Celery", "AWS S3"],
-    images: ["/projects/rentbiz/1.jpg", "/projects/rentbiz/2.jpg"],
+    images: ["/projects/rentbiz/1.png"],
+    size: "medium"
+  },
+  {
+    slug: "kiraj",
+    title: "Kiraj — Agri-Commerce Marketplace",
+    tag: "Kiraj Agromart",
+    addressBar: "kiraj.app/dashboard",
+    description:
+      "A marketplace connecting farmers, retailers and suppliers, with four roles: Admin, Vendor, Retailer and Distributor. Covers the catalogue, inventory, orders, shipments, PDF invoicing and purchase orders, with real-time updates over websockets and background jobs on Celery.",
+    stack: ["Django", "DRF", "Celery", "MySQL", "Next.js"],
+    images: ["/projects/kiraj/1.png"],
     size: "medium"
   },
   {
@@ -48,19 +59,40 @@ export const projects: Project[] = [
     tag: "Freelance",
     addressBar: "sssmartonline.com/admin",
     description:
-      "A small e-commerce storefront paired with a lightweight backend ERP — WhatsApp order flow, invoice printing and sales reporting.",
+      "A poultry and meat business with an online storefront (cutting sizes, cart, WhatsApp orders) and a lightweight back office with a point-of-sale counter, invoice printing and sales reporting.",
     stack: ["Django", "React"],
-    images: ["/projects/sssmartonline/1.jpg", "/projects/sssmartonline/2.jpg"],
+    images: ["/projects/sssmartonline/1.png", "/projects/sssmartonline/2.png"],
     size: "medium"
+  },
+  {
+    slug: "raw-arch-film",
+    title: "The Raw Arch Film — Quote Platform",
+    tag: "Freelance",
+    addressBar: "rawarch.studio",
+    description:
+      "A quote-request site for a Bengaluru film studio. Clients pick a service and package in a public quote wizard, and the studio manages enquiries, services, packages, add-ons and portfolio from an admin panel.",
+    stack: ["Next.js", "React", "TypeScript"],
+    images: ["/projects/rawarch/1.png", "/projects/rawarch/2.png"]
   },
   {
     slug: "algo-trading",
     title: "Algo Trading Platform",
     tag: "Personal",
     addressBar: "localhost:8000/trades",
-    description: "A self-built platform for running my own trading strategies, for personal use.",
+    description: "A self-built trading platform with a live dashboard for open positions and P&L, plus backtest results. It runs MA crossover and RSI mean-reversion strategies through Zerodha, for personal use.",
     stack: ["Python"],
-    images: ["/projects/algo-trading/1.jpg"],
+    images: ["/projects/algo-trading/1.png"],
+    size: "small"
+  },
+  {
+    slug: "appdrop",
+    title: "AppDrop",
+    tag: "Personal",
+    addressBar: "appdrop.app/applications",
+    description:
+      "A Vercel-style deployment platform. Upload a project as a ZIP (node_modules stripped out) and AppDrop detects the framework, Node version and package manager, validates the structure, then builds and serves it live.",
+    stack: ["React", "Vite", "Node"],
+    images: ["/projects/appdrop/1.png"],
     size: "small"
   },
   {
@@ -69,20 +101,24 @@ export const projects: Project[] = [
     tag: "Personal",
     addressBar: "stream.local/live",
     description:
-      "A small live-streaming platform — Django for the core app, FastAPI microservice for the streaming path.",
+      "VidStream, a video streaming app with a recommended feed, grid and list views, uploads and notifications. Django handles the core app, with a FastAPI microservice for the HLS streaming path.",
     stack: ["Django", "FastAPI"],
-    images: ["/projects/hls-streaming/1.jpg"],
+    images: ["/projects/hls-streaming/1.png"],
     size: "small"
   },
   {
     slug: "farmer-marketplace",
-    title: "Farmer Marketplace",
+    title: "FarmAid — Farm Direct Marketplace",
     tag: "Personal",
-    addressBar: "marketplace.local/feed",
+    addressBar: "farmaid.app/market",
     description:
-      "A direct-selling marketplace connecting farmers to customers, with real-time order updates over Channels and Redis.",
+      "A direct-selling platform connecting farmers to customers, with three roles: customers browse and order, farmers list crops and run quick sales, and admins manage users, farmers, orders and categories. Real-time order updates run over Channels and Redis.",
     stack: ["Django", "Channels", "Redis"],
-    images: ["/projects/farmer-marketplace/1.jpg"],
+    images: [
+      "/projects/farmer-marketplace/1.png",
+      "/projects/farmer-marketplace/2.png",
+      "/projects/farmer-marketplace/3.png"
+    ],
     size: "small"
   }
 ];
