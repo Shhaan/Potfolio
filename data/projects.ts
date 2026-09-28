@@ -27,7 +27,7 @@ export const projects: Project[] = [
     addressBar: "xims.internal/dashboard",
     description:
       "A large-scale IMS with QMS, EMS, OHS and EnMS modules for enterprise clients: documentation control, training, audits and inspections, risk and opportunity tracking, supplier management and corrective actions, with role-based access across 100+ permissions. My work sat mostly in the backend, modeling the permission structure and the workflows built on top of it.",
-    stack: ["Django", "React", "Celery", "EC2", "Railway"],
+    stack: ["Django", "React", "Celery", "PostgreSQL", "AWS", "EC2", "Railway"],
     images: ["/projects/xims/1.png", "/projects/xims/2.png"],
     featured: true
   },
@@ -49,7 +49,7 @@ export const projects: Project[] = [
     addressBar: "kiraj.app/dashboard",
     description:
       "A marketplace connecting farmers, retailers and suppliers, with four roles: Admin, Vendor, Retailer and Distributor. Covers the catalogue, inventory, orders, shipments, PDF invoicing and purchase orders, with real-time updates over websockets and background jobs on Celery.",
-    stack: ["Django", "DRF", "Celery", "MySQL", "Next.js"],
+    stack: ["Django", "DRF", "Celery", "MySQL"],
     images: ["/projects/kiraj/1.png"],
     size: "medium"
   },
@@ -80,7 +80,7 @@ export const projects: Project[] = [
     tag: "Personal",
     addressBar: "localhost:8000/trades",
     description: "A self-built trading platform with a live dashboard for open positions and P&L, plus backtest results. It runs MA crossover and RSI mean-reversion strategies through Zerodha, for personal use.",
-    stack: ["Python"],
+    stack: ["Python", "Next.js"],
     images: ["/projects/algo-trading/1.png"],
     size: "small"
   },
@@ -91,7 +91,7 @@ export const projects: Project[] = [
     addressBar: "appdrop.app/applications",
     description:
       "A Vercel-style deployment platform. Upload a project as a ZIP (node_modules stripped out) and AppDrop detects the framework, Node version and package manager, validates the structure, then builds and serves it live.",
-    stack: ["React", "Vite", "Node"],
+    stack: ["Django", "React", "Vite"],
     images: ["/projects/appdrop/1.png"],
     size: "small"
   },
@@ -102,7 +102,7 @@ export const projects: Project[] = [
     addressBar: "stream.local/live",
     description:
       "VidStream, a video streaming app with a recommended feed, grid and list views, uploads and notifications. Django handles the core app, with a FastAPI microservice for the HLS streaming path.",
-    stack: ["Django", "FastAPI"],
+    stack: ["Django", "FastAPI", "React"],
     images: ["/projects/hls-streaming/1.png"],
     size: "small"
   },
@@ -113,7 +113,7 @@ export const projects: Project[] = [
     addressBar: "farmaid.app/market",
     description:
       "A direct-selling platform connecting farmers to customers, with three roles: customers browse and order, farmers list crops and run quick sales, and admins manage users, farmers, orders and categories. Real-time order updates run over Channels and Redis.",
-    stack: ["Django", "Channels", "Redis"],
+    stack: ["Django", "React", "Channels", "Redis", "Payment Gateway"],
     images: [
       "/projects/farmer-marketplace/1.png",
       "/projects/farmer-marketplace/2.png",

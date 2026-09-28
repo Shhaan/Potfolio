@@ -39,7 +39,7 @@ export const site = {
         "Worked on RentBiz, a property rental management platform, end to end — Django, React and Celery, deployed on EC2 and S3.",
         "Owned deployment and optimization for production systems on AWS EC2, S3, Aurora and Amplify."
       ],
-      stack: ["Django", "React", "Celery", "AWS", "Railway"]
+      stack: ["Django", "FastAPI", "React", "Next.js", "Celery", "AWS", "Railway"]
     },
     {
       date: "Jul 2024 — Aug 2025",
@@ -76,6 +76,7 @@ export const site = {
   contact: [
     { label: "Email", value: "mohammedshan464@gmail.com", href: "mailto:mohammedshan464@gmail.com" },
     { label: "GitHub", value: "github.com/shhaan", href: "https://github.com/shhaan" },
-    { label: "LinkedIn", value: "in/mohammed-shan-", href: "https://www.linkedin.com/in/mohammed-shan-" }
+    { label: "LinkedIn", value: "in/mohammed-shan-", href: "https://www.linkedin.com/in/mohammed-shan-" },
+    { label: "Medium", value: "medium.com/@mohammedshan", href: "https://medium.com/@mohammedshan" }
   ]
 };
